@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xdev.mp.mapper.SysRoleMapper">
+
+    <resultMap id="SysRoleResult" type="SysRole" >
+        <result property="id"    column="id"    />
+        <result property="roleCode"    column="role_code"    />
+        <result property="roleName"    column="role_name"    />
+        <result property="roleType"    column="role_type"    />
+        <result property="authType"    column="auth_type"    />
+        <result property="sortIndex"    column="sort_index"    />
+        <result property="delFlag"    column="del_flag"    />
+        <result property="remarks"    column="remarks"    />
+        <result property="createBy"    column="create_by"    />
+        <result property="createUser"    column="create_user"    />
+        <result property="createTime"    column="create_time"    />
+        <result property="updateBy"    column="update_by"    />
+        <result property="updateUser"    column="update_user"    />
+        <result property="updateTime"    column="update_time"    />
+    </resultMap>
+
+</mapper>
