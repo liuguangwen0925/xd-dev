@@ -1,6 +1,5 @@
 package com.xdev.mp.controller;
 
-import com.baomidou.mybatisplus.extension.conditions.query.QueryChainWrapper;
 import com.xdev.mp.JsonResult.Result;
 import com.xdev.mp.entity.SysRole;
 import com.xdev.mp.service.SysRoleService;
@@ -17,15 +16,15 @@ import java.util.Objects;
 public class SysRoleController {
 
     @Resource
-    private  SysRoleService sysRoleService;
+    private SysRoleService sysRoleService;
 
     @GetMapping("/list")
-    public Result getList(){
+    public Result getList() {
         List<SysRole> list = sysRoleService.list();
-        if(!Objects.isNull(list)){
+        if (!Objects.isNull(list)) {
             return Result.ok(list);
-        }else{
-            return  Result.fail();
+        } else {
+            return Result.fail();
         }
     }
 }
